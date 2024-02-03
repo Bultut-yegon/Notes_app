@@ -53,6 +53,7 @@
     margin: 20px 0;
     outline: none;
     border-radius: 5px;
+    display:block;
 }
 .inputBox img{
     width: 22px;
