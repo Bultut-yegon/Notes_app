@@ -26,7 +26,7 @@ container.addEventListener('click', function(e){
         e.target.parentElement.remove();
         updateStorage();
     }
-    else if(e.target.tagName=='put'){
+    else if(e.target.tagName==='inputBox'){
         notes = document.querySelectorAll(inputBox);
         notes.forEach(note=>{
             note.onkeyup = function(){
@@ -37,7 +37,7 @@ container.addEventListener('click', function(e){
     }
 })
 document.addEventListener('keydown', event => {
-    if (event.key=== 'enter'){
+    if (event.key=== 'Enter'){
         document.execCommand("insertLineBreak");
         event.preventDefault();
     }
